@@ -3,32 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora Passo a Passo</title>
+    <title>Calculadora Escolar Passo a Passo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Kalam:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
 
     <div class="calculadora-container">
-        <h1>Calculadora Passo a Passo</h1>
-        <p>Insira os números e escolha a operação para ver o resultado detalhado.</p>
+        <header>
+            <h1>Calculadora Escolar</h1>
+            <p>Aprenda matemática vendo cada detalhe da conta!</p>
+        </header>
 
-        <div class="input-group">
-            <input type="number" id="numero1" placeholder="Primeiro número" required>
-            <input type="number" id="numero2" placeholder="Segundo número" required>
-        </div>
+        <main>
+            <div class="input-area">
+                <div class="input-wrapper">
+                    <input type="text" id="numero1" placeholder="Ex: 125,50" class="numero-input">
+                    <input type="text" id="numero2" placeholder="Ex: 10,25" class="numero-input">
+                </div>
+                
+                <div class="botoes-operacao">
+                    <button class="botao-op" data-op="+">+</button>
+                    <button class="botao-op" data-op="-">−</button>
+                    <button class="botao-op" data-op="*">×</button>
+                    <button class="botao-op" data-op="/">÷</button>
+                </div>
 
-        <div class="botoes-operacao">
-            <button class="botao-op" data-op="+">+</button>
-            <button class="botao-op" data-op="-">-</button>
-            <button class="botao-op" data-op="*">×</button>
-            <button class="botao-op" data-op="/">÷</button>
-        </div>
+                <div class="botoes-acao">
+                    <button id="calcularBtn">Calcular</button>
+                    <button id="limparBtn">Limpar</button>
+                </div>
+            </div>
 
-        <button id="calcularBtn">Calcular e Mostrar Passos</button>
-
-        <div id="resultado">
-            <!-- Os passos do cálculo aparecerão aqui -->
-        </div>
+            <section id="resultado">
+                <div class="placeholder-text">
+                    O resultado detalhado aparecerá aqui...
+                </div>
+            </section>
+        </main>
     </div>
 
     <script src="script.js"></script>
