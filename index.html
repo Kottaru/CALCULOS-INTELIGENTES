@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Passo a Passo</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <div class="calculadora-container">
+        <h1>Calculadora Passo a Passo</h1>
+        <p>Insira os números e escolha a operação para ver o resultado detalhado.</p>
+
+        <div class="input-group">
+            <input type="number" id="numero1" placeholder="Primeiro número" required>
+            <input type="number" id="numero2" placeholder="Segundo número" required>
+        </div>
+
+        <div class="botoes-operacao">
+            <button class="botao-op" data-op="+">+</button>
+            <button class="botao-op" data-op="-">-</button>
+            <button class="botao-op" data-op="*">×</button>
+            <button class="botao-op" data-op="/">÷</button>
+        </div>
+
+        <button id="calcularBtn">Calcular e Mostrar Passos</button>
+
+        <div id="resultado">
+            <!-- Os passos do cálculo aparecerão aqui -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
